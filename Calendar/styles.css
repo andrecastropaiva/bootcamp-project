@@ -1,0 +1,34 @@
+.bottom {
+    border-bottom: none !important;
+}
+
+.container-fluid {
+    border: 3px solid black;
+    height: 600px;
+    width: 1140px;
+    margin-top: 9em;
+    margin-bottom: 9em;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+ .col {
+    border-bottom: solid 2px;
+    border-right: solid 2px;
+ }
+
+.date {
+    color: black;
+    height: 113px;
+}
+
+.days {
+    height:30px;
+}
+
+.end {
+    
+    border: none
+}
