@@ -81,7 +81,7 @@
 
   .calendar,
   .calendar tr,
-  #calendar tbody {
+  .calendar tbody {
     grid-template-columns: 1fr;
   }
 
