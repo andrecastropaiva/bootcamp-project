@@ -22,12 +22,16 @@ body {
   width: 100%;
 }
 
-.month-select {
+.calendar .month-select {
   text-align: center;
   grid-column: 1 / -1;
   font-size: 130%;
   font-weight: bold;
-  padding: 10px 0;
+  margin-left: 62.7em;
+  margin-top: 5em;
+  display: flex;
+  position: relative;
+  margin-bottom: 1em;
 }
 
 .calendar a {
