@@ -41,11 +41,33 @@ const events = [
     },
 ]
 
+
+
+
 function CalendarApp() {
+    const [newEvent, setNewEvent] = useState({title:"", start:"", end:""});
+    const [allEvents, setAllEvents] = useState(events);
+
+    function handleEvent(){
+        setAllEvents([...allEvents, newEvent])
+    }
     return (
+        <div>
+        <h2> Add New Event </h2>
+        <div>
+            <input type="text" placeholder="Add title" style ={{width: "20%", marginRight: "10px"}}
+            value = {newEvent.title} onChange = {(e) => setNewEvent({...newEvent, title: e.target.value})}
+            />
+            <DatePicker placeholderText="Start" style={{marginRight: "10px"}}
+            selected = {newEvent.start} onChange = {(start) => setNewEvent({...newEvent, start: start})} />
+            <DatePicker placeholderText="End"
+            selected = {newEvent.end} onChange = {(end) => setNewEvent({...newEvent, end: end})} />
+            <button style= {{ marginTop: "10px"}} onClick={handleEvent}> Add New Event </button>
+        </div>
         <div className="CalendarApp">
-            <Calendar localizer={localizer} events={events}
+            <Calendar localizer={localizer} events={allEvents}
                 startAccessor="start" endAccessor="end" />
+        </div>
         </div>
     );
 }
