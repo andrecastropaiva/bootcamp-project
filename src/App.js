@@ -1,12 +1,12 @@
-import Home from "./page/home";
+import Calendar from "./components/calendar";
 import Header from "./components/header";
-import "./index.css"
+import "./styles.css"
 
 function App() {
   return (
     <div>
       <Header />
-      <Home />
+      <Calendar />
     </div>
   );
 }
