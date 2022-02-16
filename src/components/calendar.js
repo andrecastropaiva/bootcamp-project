@@ -53,8 +53,9 @@ function CalendarApp() {
     }
     return (
         <div>
-        <h2> Add New Event </h2>
-        <div>
+        <div class = "NewEvent">
+            <h2> Add New Event </h2>
+        
             <input type="text" placeholder="Add title" style ={{width: "20%", marginRight: "10px"}}
             value = {newEvent.title} onChange = {(e) => setNewEvent({...newEvent, title: e.target.value})}
             />
