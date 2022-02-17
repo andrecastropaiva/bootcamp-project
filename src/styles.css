@@ -23,5 +23,11 @@ code {
     monospace;
 }
 .NewEvent {
-  text-align: center ;
+  padding: 30px;
+  text-align: right;
+  display: block;
+}
+
+.react-datepicker-popper {
+  display: contents;
 }
