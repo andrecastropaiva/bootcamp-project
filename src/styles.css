@@ -22,6 +22,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.city{
+  padding: 15px;
+  width: 40%;
+  margin: auto;
+  border: solid 1px black;
+  font-size: 16px;
+}
+
+.city:focus{
+  outline: none;
+}
 .NewEvent {
   padding: 30px;
   text-align: right;
@@ -30,4 +42,12 @@ code {
 
 .react-datepicker-popper {
   display: contents;
+}
+
+.weatherContainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 25px;
 }
