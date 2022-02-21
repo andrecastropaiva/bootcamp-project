@@ -22,32 +22,81 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.city{
+/*  ***** BY NAYAN *****
+.city {
   padding: 15px;
   width: 40%;
   margin: auto;
   border: solid 1px black;
-  font-size: 16px;
+  font-size: 1.6em;
 }
 
-.city:focus{
+.city:focus {
   outline: none;
 }
+
+.location {
+  font-size: 1.2em;
+}
+*/
+
 .NewEvent {
   padding: 30px;
   text-align: right;
   display: block;
 }
 
+.rbc-event:focus,
+.rbc-background-event:focus {
+  background-color: rgb(212, 0, 255) !important;
+}
+
+.rbc-event.rbc-selected,
+.rbc-day-slot .rbc-selected.rbc-background-event {
+  background-color: rgb(212, 0, 255) !important;
+}
+
 .react-datepicker-popper {
   display: contents;
 }
-
+/*  ******* BY NAYAN *********
 .weatherContainer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
   padding: 25px;
+}
+*/
+
+/* *******  BY ANDRE ********* */
+
+.weatherContainer {
+  display: contents;
+  width: 40%;
+  height: 40vh;
+  position: relative;
+  color: #000f;
+}
+
+.weatherContainer .search {
+  text-align: center;
+  padding: 1rem;
+}
+
+.weatherContainer input {
+  padding: 0.7rem 1.5rem;
+  font-size: 0.8rem;
+  border-radius: 25px;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.weatherReturn .location {
+  font-size: 1.5em;
+}
+
+.weatherReturn .description {
+  display: contents;
+  color: #000f;
+  position: relative;
 }
