@@ -25,31 +25,7 @@ function Weather() {
 
     return (
 
-        /* *************** BY NAYAN *************
-        
-                <div className="weatherContainer">
-                    <input
-                        className="location"
-                        placeholder="Choose a location"
-                        onChange={e => setCity(e.target.value)}
-                        value={city}
-                        onKeyPress={search}
-                    />
-                    {typeof weatherData.main === 'undefined' ? (
-                        <div> Come and check the weather </div>
-                    ) : (
-                        <div>
-                            <p> {weatherData.name} </p>
-                            <p> {Math.round(weatherData.main.temp)} degrees </p>
-                            <p>{weatherData.weather[0].description} </p>
-                        </div>
-                    )}
-                </div> 
-                
-                */
 
-
-        /* BY ANDRE */
         <div className="weatherContainer">
             <div className="search">
                 <input
@@ -60,7 +36,7 @@ function Weather() {
                     onKeyPress={search}
                 />
                 {typeof weatherData.main === 'undefined' ? (
-                    <div> Come and check the weather </div>
+                    <div class="text"> Come and check the weather </div>
                 ) : (
                     <div className="weatherReturn">
                         <div className="location">
@@ -71,6 +47,9 @@ function Weather() {
                         </div>
                         <div className="description">
                             {weatherData.weather ? <p>{weatherData.weather[0].description}</p> : null}
+                        </div>
+                        <div class="weather-icon">
+                            <img src= {(`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`)} />
                         </div>
                     </div>
 

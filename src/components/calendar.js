@@ -60,14 +60,14 @@ function CalendarApp() {
                     onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })}
                 />
 
-                <DatePicker placeholderText="Start" selected={newEvent.start}
+                <DatePicker  placeholderText="Start" selected={newEvent.start}
                     onChange={(start) => setNewEvent({ ...newEvent, start: start })}
                 />
 
                 <DatePicker placeholderText="End" selected={newEvent.end}
                     onChange={(end) => setNewEvent({ ...newEvent, end: end })}
                 />
-                <button onClick={handleEvent}> Scheduler </button>
+                <button onClick={handleEvent}> Add new event </button>
             </div>
 
             <div className="CalendarApp">
