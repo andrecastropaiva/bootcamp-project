@@ -9,10 +9,6 @@ body {
   background-color: rgb(253, 242, 231);
 }
 
-button {
-  margin-top: 5px;
-}
-
 header {
   text-align: center;
 }
@@ -21,7 +17,6 @@ header {
   text-align: center;
   height: 100vh;
   padding: 20px;
-  
 }
 
 code {
@@ -29,33 +24,60 @@ code {
     monospace;
 }
 
+.add-title-box {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.start-event-box {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.end-event-box {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.add-new-event-btn {
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-top: 15px;
+  padding: 10px;
+}
 
 .NewEvent {
   padding: 30px;
-  text-align: right;
+  text-align: center;
   display: block;
-  width: 150px;
+  width: 190px;
   border: solid 2px black;
   border-radius: 50px;
   background: white;
-  margin-left: 1285px;
+  margin-left: 1370px;
 }
 
-
+.rbc-btn-group {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 40px;
+}
 
 .rbc-calendar {
   background-color: white;
- 
+  padding: inherit;
 }
 
 .rbc-event {
   background-color: black !important;
 }
-.rbc-toolbar .rbc-toolbar-label{
+.rbc-toolbar .rbc-toolbar-label {
   flex-grow: 1;
   padding: 0 10px;
   text-align: center;
-  margin-top: -110px;
   border: solid 3px black;
   border-radius: 50px;
   font-size: x-large;
@@ -77,6 +99,10 @@ code {
   background: #bab9b9 !important;
 }
 
+.react-datepicker {
+  margin-left: -26px;
+}
+
 .react-datepicker-popper {
   display: contents;
 }
@@ -85,6 +111,13 @@ code {
   margin-top: 3px;
 }
 
+/*.react-datepicker__input-container {
+  border: solid 2px black;
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+  width: 79%;
+}*/
 
 .text {
   margin-top: 10px;
@@ -111,7 +144,7 @@ code {
 }
 
 .weatherReturn .location {
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 .weatherReturn .description {
@@ -124,7 +157,7 @@ code {
   width: 200px;
   border: solid 3px black;
   border-radius: 70px;
-  margin-left: 644px;
+  margin-left: 715px;
   margin-top: 20px;
   background-color: white;
 }

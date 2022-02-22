@@ -5,8 +5,8 @@ class Header extends React.Component {
         return (
             <header>
                 <header>
-                    <h1 class="title">📅 Calendar SPA</h1>
-                    Built by Andre and Nayan
+                    <h1 className="title">🌤️ Weather & Calendar 📅</h1>
+                    <p>Built by Andre and Nayan</p>
                 </header>
             </header>
         );

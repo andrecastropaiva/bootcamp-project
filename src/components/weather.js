@@ -36,7 +36,7 @@ function Weather() {
                     onKeyPress={search}
                 />
                 {typeof weatherData.main === 'undefined' ? (
-                    <div class="text"> Come and check the weather </div>
+                    <div className="text"> Come and check the weather </div>
                 ) : (
                     <div className="weatherReturn">
                         <div className="location">
@@ -48,8 +48,8 @@ function Weather() {
                         <div className="description">
                             {weatherData.weather ? <p>{weatherData.weather[0].description}</p> : null}
                         </div>
-                        <div class="weather-icon">
-                            <img src= {(`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`)} />
+                        <div className="weather-icon">
+                            <img src={(`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`)} />
                         </div>
                     </div>
 

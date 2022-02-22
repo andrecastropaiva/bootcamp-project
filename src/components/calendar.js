@@ -54,20 +54,20 @@ function CalendarApp() {
     return (
         <div>
             <div class="NewEvent">
-                <h3> Add New Event </h3>
+                <h3>📌 Add New Event </h3>
 
-                <input type="text" placeholder="Add title" value={newEvent.title}
+                <input className="add-title-box" type="text" placeholder="Add title" value={newEvent.title}
                     onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })}
                 />
 
-                <DatePicker  placeholderText="Start" selected={newEvent.start}
+                <DatePicker className="start-event-box" placeholderText="Start" selected={newEvent.start}
                     onChange={(start) => setNewEvent({ ...newEvent, start: start })}
                 />
 
-                <DatePicker placeholderText="End" selected={newEvent.end}
+                <DatePicker className="end-event-box" placeholderText="End" selected={newEvent.end}
                     onChange={(end) => setNewEvent({ ...newEvent, end: end })}
                 />
-                <button onClick={handleEvent}> Add new event </button>
+                <button className="add-new-event-btn" onClick={handleEvent}>Add New Event </button>
             </div>
 
             <div className="CalendarApp">
