@@ -1,3 +1,7 @@
+.AddNewEvent {
+  margin-top: 5px;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -6,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(229, 238, 247);
 }
 
 header {
@@ -16,6 +21,7 @@ header {
   text-align: center;
   height: 100vh;
   padding: 20px;
+ 
 }
 
 code {
@@ -35,19 +41,56 @@ code {
   outline: none;
 }
 .NewEvent {
+
   padding: 30px;
-  text-align: right;
+  text-align: center;
   display: block;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 25px;
+  padding-top: 0;
+
+  margin-bottom: 0px;
+
 }
 
 .react-datepicker-popper {
   display: contents;
+  
 }
 
+.react-datepicker-wrapper {
+  margin-top: 5px;
+}
+
+.rbc-calendar {
+  background-color: white;
+}
+
+.rbc-event {
+  background-color: black !important;
+}
 .weatherContainer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
   padding: 25px;
+
+  padding-bottom: 0;
+  
+}
+
+.weatherData {
+  color: black;
+  width: inherit;
+  text-align: center;
+  background-color: #ccccf6;
+  padding: 5px;
+  margin-top: 1em;
+  
+  border-radius: 10px;
 }

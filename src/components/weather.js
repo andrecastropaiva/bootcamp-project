@@ -35,9 +35,9 @@ function Weather() {
             onKeyPress={search}
             />
             {typeof weatherData.main === 'undefined'? (
-                <div> Come and check the weather </div>
+                <div class = "weatherData"> <p> Choose a location and check the weather! </p>  </div>
             ) :  (
-                <div>
+                <div class ="weatherData">
                 <p> {weatherData.name} </p>
                 <p> {Math.round (weatherData.main.temp)} degrees </p>
                 <p>{weatherData.weather[0].description} </p>

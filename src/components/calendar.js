@@ -67,7 +67,7 @@ function CalendarApp() {
                 <DatePicker placeholderText="End" selected={newEvent.end}
                     onChange={(end) => setNewEvent({ ...newEvent, end: end })}
                 />
-                <button onClick={handleEvent}> Scheduler </button>
+                <button class="AddNewEvent" onClick={handleEvent} > Add new event </button>
             </div>
 
             <div className="CalendarApp">
