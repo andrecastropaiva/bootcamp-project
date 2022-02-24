@@ -48,6 +48,7 @@ function CalendarApp() {
     const [newEvent, setNewEvent] = useState({ title: "", start: "", end: "" });
     const [allEvents, setAllEvents] = useState(events);
 
+
     function handleEvent() {
         setAllEvents([...allEvents, newEvent])
     }
@@ -70,9 +71,15 @@ function CalendarApp() {
                 <button className="add-new-event-btn" onClick={handleEvent}>Add New Event </button>
             </div>
 
+
+
             <div className="CalendarApp">
-                <Calendar localizer={localizer} events={allEvents}
-                    startAccessor="start" endAccessor="end" />
+                <Calendar
+                    localizer={localizer}
+                    events={allEvents}
+                    startAccessor="start"
+                    endAccessor="end"
+                />
             </div>
         </div>
     );
